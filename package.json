@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Coffee, tea or espresso awards for lucky users.",
   "main": "index.html",
-  "directories": {
-    "doc": "doc"
-  },
   "author": "Remy Schrader",
-  "license": "CC BY-NC-ND 4.0"
+  "license": "CC-BY-NC-ND-4.0"
 }
