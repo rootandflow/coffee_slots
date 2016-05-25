@@ -1,0 +1,65 @@
+# Site settings
+## Github Pages
+### Configuration Overrides
+safe: true
+lsi: false
+# source: your top-level directory  
+### Defaults
+highlighter: rouge 
+# github: [Repository metadata]
+
+## Regional Settings 
+timezone: America/Los_Angeles
+
+## Site structure
+url: "http://remy-actual.github.io/coffee-slots" # the base hostname & protocol for your site
+  # Do not use in design assets; "site.url" is only used used in the xml feed and in the page head for the canonical header and the RSS link.
+baseurl: "" # the subpath of your site, e.g. /blog
+  # Use baseurl in design assets to indicate site root. 
+  # If your baseurl varies from dev to production environment, set baseurl to match production and either: 
+  # 1. run locally with "jekyll serve".
+  # 2. configure local settings in a separate _config_dev.yml file 
+  # See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development for reference.  
+permalink: /:categories/:year/:month/:title/ 
+# final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output 
+
+## Build settings
+### Name deployment environments -- will check against first 3 letters of Github repo via site.github.repository_name. No github repo information inlocal development will result in null value. 
+env:
+  prd: "rootandflow.github.io/framheim" # live production site
+  stg: NULL # staging 
+  dev: NULL # development
+
+### Include Github Pages supported plugins. 
+gems: 
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+### Exclude working resources and manifests from Github Pages site build. 
+exclude: 
+  - bower.json
+  - bower_components/
+  - CNAME
+  - Gemfile
+  - LICENSE
+  - node_modules/
+  - npm-debug.log
+  - package.json
+  - README.md
+  - vendor/
+
+### Templating
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+  auto_ids: false
+
+## Site metadata
+title: "Coffee Slots"
+description: "Coffee, tea or espresso awards for lucky users."
+### Contact information 
+email: remy@rootandflow.com
+twitter_username: remy_actual
+github_username:  remy-actual
+
