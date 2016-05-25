@@ -1,0 +1,29 @@
+{
+  "name": "Coffee Slots",
+  "authors": [
+    "Remy Schrader"
+  ],
+  "description": "Coffee, tea or espresso awards for lucky users.",
+  "main": "package.json",
+  "keywords": [
+    "web",
+    "skillset",
+    "interactive",
+    "chance",
+    "javascript",
+    "front-end"
+  ],
+  "license": "CC-BY-NC-ND-4.0",
+  "homepage": "http://remy-actual.github.io/coffee_slots",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true,
+  "dependencies": {
+    "normalize-scss": "^3.0.3"
+  }
+}
